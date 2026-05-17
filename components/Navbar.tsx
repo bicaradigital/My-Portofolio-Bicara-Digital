@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 import { siteConfig } from "@/data/portfolio";
 
 const navLinks = [
@@ -39,17 +38,7 @@ export default function Navbar() {
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <a href="#" className="flex items-center gap-2">
-              <Image
-                src="/images/bicara-digital-logo.png"
-                alt="Bicara Digital"
-                width={140}
-                height={50}
-                className="h-12 w-auto"
-                priority
-              />
-            </a>
+            {/* Logo removed */}
 
             {/* Desktop links */}
             <div className="hidden md:flex items-center gap-6">
@@ -101,13 +90,7 @@ export default function Navbar() {
           }`}
         >
           <div className="flex items-center justify-between p-5 border-b border-brand-border">
-            <Image
-              src="/images/bicara-digital-logo.png"
-              alt="Bicara Digital"
-              width={120}
-              height={40}
-              className="h-10 w-auto"
-            />
+            <span className="font-display font-bold text-lg text-brand-blue">Bicara<span className="text-brand-orange">.</span>Digital</span>
             <button onClick={() => setOpen(false)}>
               <X size={22} className="text-brand-muted" />
             </button>
