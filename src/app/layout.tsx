@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
+import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/data/portfolio";
 
-// Fonts are loaded via globals.css
-// No need to import fonts directly in layout
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} — ${siteConfig.tagline}`,
@@ -31,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
       <body className="bg-brand-bg text-brand-dark font-body antialiased">
         {children}
       </body>

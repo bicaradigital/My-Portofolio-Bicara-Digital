@@ -8,12 +8,14 @@ const categories = [
   { label: "Logo Design", value: "logo" },
   { label: "Packaging", value: "packaging" },
   { label: "Apparel", value: "apparel" },
+  { label: "Content Design", value: "content" },
 ];
 
 const categoryColors: Record<string, string> = {
   logo: "bg-brand-blue-pale text-brand-blue-mid",
   packaging: "bg-orange-50 text-brand-orange-deep",
   apparel: "bg-green-50 text-green-700",
+  content: "bg-purple-50 text-purple-700",
 };
 
 type DesignProject = typeof designProjects[0];
