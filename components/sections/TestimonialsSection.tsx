@@ -7,7 +7,7 @@ export default function TestimonialsSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
-          <p className="text-xs font-semibold tracking-widest uppercase text-brand-orange mb-3">
+          <p className="text-xs font-semibold tracking-widest uppercase text-brand-accent mb-3">
             What Clients Say
           </p>
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-brand-dark tracking-tight accent-bar">
@@ -31,7 +31,7 @@ export default function TestimonialsSection() {
                   <Star
                     key={i}
                     size={16}
-                    className="fill-brand-orange text-brand-orange"
+                    className="fill-brand-accent text-brand-accent"
                   />
                 ))}
               </div>
@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
               {/* Author */}
               <div className="border-t border-brand-border pt-4">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-blue to-brand-orange flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-primary to-brand-accent flex items-center justify-center flex-shrink-0">
                     <span className="font-display font-bold text-white text-xs">
                       {testimonial.avatar}
                     </span>
@@ -57,7 +57,7 @@ export default function TestimonialsSection() {
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-brand-orange text-white px-2.5 py-1 rounded-full">
+                  <span className="text-xs bg-brand-accent text-white px-2.5 py-1 rounded-full">
                     {testimonial.service}
                   </span>
                   <span className="text-xs text-brand-muted">
@@ -81,7 +81,7 @@ export default function TestimonialsSection() {
               key={i}
               className="bg-white border border-brand-border rounded-2xl p-4 text-center"
             >
-              <p className="font-display font-bold text-2xl text-brand-blue mb-1">
+              <p className="font-display font-bold text-2xl text-brand-primary mb-1">
                 {stat.number}
               </p>
               <p className="text-xs text-brand-muted">{stat.label}</p>

@@ -501,6 +501,7 @@ export const testimonials = [
     location: "Solo, 2024",
     service: "Aplikasi Invoice Otomatis",
     rating: 5,
-    text: "Dulu buat invoice manual satu per satu, buang waktu banget. Sekarang pakai aplikasi dari Bicara Digital, invoice langsung jadi otomatis — tinggal input data, langsung keluar rapi dan siap kirim ke customer. Adina Kaos jadi makin terlihat profesional di mata buyer. Terima kasih Bicara Digital!",,
+    text: "Dulu buat invoice manual satu per satu, buang waktu banget. Sekarang pakai aplikasi dari Bicara Digital, invoice langsung jadi otomatis — tinggal input data, langsung keluar rapi dan siap kirim ke customer. Adina Kaos jadi makin terlihat profesional di mata buyer. Terima kasih Bicara Digital!",
+    avatar: "DI",
   },
 ]

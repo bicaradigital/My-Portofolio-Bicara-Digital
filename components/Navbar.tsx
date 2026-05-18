@@ -46,7 +46,7 @@ export default function Navbar() {
                 <button
                   key={link.href}
                   onClick={() => handleNav(link.href)}
-                  className="text-sm font-medium text-brand-muted hover:text-brand-blue transition-colors link-underline"
+                  className="text-sm font-medium text-brand-muted hover:text-brand-primary transition-colors link-underline"
                 >
                   {link.label}
                 </button>
@@ -55,7 +55,7 @@ export default function Navbar() {
                 href={`https://wa.me/${siteConfig.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-brand-orange hover:bg-brand-orange-deep text-white text-sm font-medium px-5 py-2 rounded-full transition-all hover:-translate-y-0.5 hover:shadow-md"
+                className="bg-brand-accent hover:bg-brand-accent text-white text-sm font-medium px-5 py-2 rounded-full transition-all hover:-translate-y-0.5 hover:shadow-md"
               >
                 Let's Talk
               </a>
@@ -64,7 +64,7 @@ export default function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setOpen(!open)}
-              className="md:hidden p-2 rounded-lg text-brand-blue hover:bg-brand-blue-pale transition-colors"
+              className="md:hidden p-2 rounded-lg text-brand-primary hover:bg-brand-primary-pale transition-colors"
             >
               {open ? <X size={22} /> : <Menu size={22} />}
             </button>
@@ -90,7 +90,7 @@ export default function Navbar() {
           }`}
         >
           <div className="flex items-center justify-between p-5 border-b border-brand-border">
-            <span className="font-display font-bold text-lg text-brand-blue">Bicara<span className="text-brand-orange">.</span>Digital</span>
+            <span className="font-display font-bold text-lg text-brand-primary">Bicara<span className="text-brand-accent">.</span>Digital</span>
             <button onClick={() => setOpen(false)}>
               <X size={22} className="text-brand-muted" />
             </button>
@@ -100,7 +100,7 @@ export default function Navbar() {
               <button
                 key={link.href}
                 onClick={() => handleNav(link.href)}
-                className="text-left px-4 py-3 rounded-xl text-brand-dark font-medium hover:bg-brand-blue-pale hover:text-brand-blue transition-colors"
+                className="text-left px-4 py-3 rounded-xl text-brand-dark font-medium hover:bg-brand-primary-pale hover:text-brand-primary transition-colors"
               >
                 {link.label}
               </button>
@@ -109,7 +109,7 @@ export default function Navbar() {
               href={`https://wa.me/${siteConfig.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 bg-brand-orange text-white text-center font-medium px-5 py-3 rounded-full transition-colors hover:bg-brand-orange-deep"
+              className="mt-4 bg-brand-accent text-white text-center font-medium px-5 py-3 rounded-full transition-colors hover:bg-brand-accent"
             >
               Let's Talk — WhatsApp
             </a>

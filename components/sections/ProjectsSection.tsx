@@ -11,8 +11,8 @@ const filters = [
 ];
 
 const categoryColors: Record<string, string> = {
-  "Web Dev": "bg-brand-blue-pale text-brand-blue-mid",
-  "Business System": "bg-orange-50 text-brand-orange-deep",
+  "Web Dev": "bg-brand-primary-pale text-brand-primary",
+  "Business System": "bg-orange-50 text-brand-accent",
   "AI / Automation": "bg-purple-50 text-purple-700",
 };
 
@@ -29,7 +29,7 @@ export default function ProjectsSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-10">
-          <p className="text-xs font-semibold tracking-widest uppercase text-brand-orange mb-3">
+          <p className="text-xs font-semibold tracking-widest uppercase text-brand-accent mb-3">
             Case Studies
           </p>
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-brand-dark tracking-tight accent-bar">
@@ -45,8 +45,8 @@ export default function ProjectsSection() {
               onClick={() => setActive(f.value)}
               className={`px-5 py-2 rounded-full text-sm font-medium border transition-all ${
                 active === f.value
-                  ? "bg-brand-blue text-white border-brand-blue shadow-sm"
-                  : "bg-white text-brand-muted border-brand-border hover:border-brand-blue hover:text-brand-blue"
+                  ? "bg-brand-primary text-white border-brand-primary shadow-sm"
+                  : "bg-white text-brand-muted border-brand-border hover:border-brand-primary hover:text-brand-primary"
               }`}
             >
               {f.label}
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
                 <span
                   className={`text-xs font-semibold px-3 py-1 rounded-full ${
                     categoryColors[project.category] ||
-                    "bg-brand-blue-pale text-brand-blue"
+                    "bg-brand-primary-pale text-brand-primary"
                   }`}
                 >
                   {project.category}
@@ -75,12 +75,12 @@ export default function ProjectsSection() {
               </div>
 
               {/* Title */}
-              <h3 className="font-semibold text-base text-brand-dark mb-1 group-hover:text-brand-blue transition-colors">
+              <h3 className="font-semibold text-base text-brand-dark mb-1 group-hover:text-brand-primary transition-colors">
                 {project.title}
               </h3>
 
               {/* Highlight */}
-              <p className="text-xs text-brand-orange font-medium mb-3">
+              <p className="text-xs text-brand-accent font-medium mb-3">
                 ✦ {project.highlight}
               </p>
 
@@ -106,7 +106,7 @@ export default function ProjectsSection() {
                 </p>
                 <ExternalLink
                   size={14}
-                  className="text-brand-muted group-hover:text-brand-orange transition-colors"
+                  className="text-brand-muted group-hover:text-brand-accent transition-colors"
                 />
               </div>
             </div>

@@ -3,17 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --blue: #1A3C6E;
-  --blue-mid: #2355A0;
-  --blue-light: #3B7DD8;
-  --blue-pale: #E8F0FB;
-  --orange: #F47C20;
-  --orange-deep: #D4610A;
-  --orange-light: #FEF0E3;
-  --dark: #0D1B2E;
-  --muted: #6B7A8D;
-  --border: #E2E8F0;
-  --bg: #F8FAFD;
+  /* Primary: Professional Dark Blue */
+  --primary: #1F2937;
+  --primary-light: #374151;
+  --primary-pale: #F3F4F6;
+  
+  /* Accent: Subtle Teal */
+  --accent: #0D9488;
+  --accent-light: #CCFBF1;
+  
+  /* Neutrals */
+  --dark: #111827;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+  --bg: #FFFFFF;
+  --bg-secondary: #F9FAFB;
   --white: #FFFFFF;
 }
 
@@ -23,11 +27,11 @@ html { scroll-behavior: smooth; }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--blue-light); border-radius: 3px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
 
 /* Selection */
-::selection { background: var(--orange); color: white; }
+::selection { background: var(--accent); color: white; }
 
 /* Animated underline */
 .link-underline {
@@ -41,7 +45,7 @@ html { scroll-behavior: smooth; }
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--orange);
+  background: var(--accent);
   transition: width 0.3s ease;
 }
 .link-underline:hover::after { width: 100%; }
@@ -65,14 +69,14 @@ html { scroll-behavior: smooth; }
 /* Grid pattern background */
 .grid-pattern {
   background-image:
-    linear-gradient(rgba(26,60,110,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(26,60,110,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(31,41,55,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31,41,55,0.05) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, var(--blue-mid), var(--orange));
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -84,16 +88,16 @@ html { scroll-behavior: smooth; }
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(26, 60, 110, 0.12);
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.1);
 }
 
-/* Orange accent bar */
+/* Accent bar */
 .accent-bar::before {
   content: '';
   display: block;
   width: 40px;
   height: 4px;
-  background: var(--orange);
+  background: var(--accent);
   border-radius: 2px;
   margin-bottom: 1rem;
 }
@@ -109,7 +113,7 @@ html { scroll-behavior: smooth; }
   100% { background-position: 200% 0; }
 }
 .img-placeholder {
-  background: linear-gradient(90deg, #E8F0FB 25%, #F0F6FF 50%, #E8F0FB 75%);
+  background: linear-gradient(90deg, #E5E7EB 25%, #F3F4F6 50%, #E5E7EB 75%);
   background-size: 200% 100%;
   animation: shimmer 1.8s infinite;
 }
@@ -126,16 +130,16 @@ html { scroll-behavior: smooth; }
 /* Tag chip */
 .tag-chip {
   display: inline-block;
-  padding: 3px 12px;
+  padding: 4px 14px;
   border-radius: 100px;
   font-size: 12px;
   font-weight: 500;
-  background: var(--blue-pale);
-  color: var(--blue-mid);
+  background: var(--primary-pale);
+  color: var(--primary);
   white-space: nowrap;
 }
 
-.tag-chip-orange {
-  background: var(--orange-light);
-  color: var(--orange-deep);
+.tag-chip-accent {
+  background: var(--accent-light);
+  color: var(--accent);
 }

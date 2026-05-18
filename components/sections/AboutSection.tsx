@@ -7,19 +7,19 @@ const experience = [
     period: "2022 – Present",
     role: "Freelance Developer & AI Consultant",
     company: "Bicara Digital — Remote, Global",
-    icon: <Briefcase size={16} className="text-brand-orange" />,
+    icon: <Briefcase size={16} className="text-brand-accent" />,
   },
   {
     period: "Previous",
     role: "Support System Operational",
     company: "Corporate — Semarang",
-    icon: <Briefcase size={16} className="text-brand-blue-light" />,
+    icon: <Briefcase size={16} className="text-brand-accent" />,
   },
   {
     period: "2019 – Present",
     role: "Graphic Designer",
     company: "Freelance — 5+ Years",
-    icon: <Palette size={16} className="text-brand-orange" />,
+    icon: <Palette size={16} className="text-brand-accent" />,
   },
 ];
 
@@ -29,7 +29,7 @@ export default function AboutSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
-          <p className="text-xs font-semibold tracking-widest uppercase text-brand-orange mb-3">
+          <p className="text-xs font-semibold tracking-widest uppercase text-brand-accent mb-3">
             Who I Am
           </p>
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-brand-dark tracking-tight accent-bar">
@@ -54,7 +54,7 @@ export default function AboutSection() {
                   {siteConfig.owner}
                 </h3>
                 <p className="text-brand-muted text-sm flex items-center gap-1.5 mt-1">
-                  <MapPin size={14} className="text-brand-orange" />
+                  <MapPin size={14} className="text-brand-accent" />
                   {siteConfig.location} — Remote Worldwide
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function AboutSection() {
             </p>
             <p>
               Through{" "}
-              <span className="text-brand-blue font-semibold">Bicara Digital</span>,
+              <span className="text-brand-primary font-semibold">Bicara Digital</span>,
               I help businesses — from local UMKM to growing startups — build
               practical digital products: web applications, business systems,
               AI-powered tools, and brand identities that actually solve problems.
@@ -102,7 +102,7 @@ export default function AboutSection() {
             </p>
             <p>
               Currently open to{" "}
-              <span className="text-brand-orange font-semibold">
+              <span className="text-brand-accent font-semibold">
                 remote project collaborations
               </span>{" "}
               and long-term client partnerships.

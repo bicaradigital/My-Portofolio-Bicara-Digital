@@ -7,7 +7,7 @@ export default function ContactSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
-          <p className="text-xs font-semibold tracking-widest uppercase text-brand-orange mb-3">
+          <p className="text-xs font-semibold tracking-widest uppercase text-brand-accent mb-3">
             Get in Touch
           </p>
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight">
@@ -31,7 +31,7 @@ export default function ContactSection() {
               href={`https://wa.me/${siteConfig.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-brand-orange hover:bg-brand-orange-deep text-white font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-orange/30 text-sm"
+              className="inline-flex items-center gap-3 bg-brand-accent hover:bg-brand-accent text-white font-semibold px-8 py-4 rounded-full transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-accent/30 text-sm"
             >
               <MessageCircle size={20} />
               Chat on WhatsApp
@@ -42,25 +42,25 @@ export default function ContactSection() {
           <div className="space-y-3">
             {[
               {
-                icon: <MessageCircle size={18} className="text-brand-orange" />,
+                icon: <MessageCircle size={18} className="text-brand-accent" />,
                 label: "WhatsApp",
                 value: siteConfig.whatsapp,
                 href: `https://wa.me/${siteConfig.whatsapp}`,
               },
               {
-                icon: <Mail size={18} className="text-brand-orange" />,
+                icon: <Mail size={18} className="text-brand-accent" />,
                 label: "Email",
                 value: siteConfig.email,
                 href: `mailto:${siteConfig.email}`,
               },
               {
-                icon: <Github size={18} className="text-brand-orange" />,
+                icon: <Github size={18} className="text-brand-accent" />,
                 label: "GitHub",
                 value: "github.com/bicaradigital",
                 href: siteConfig.github,
               },
               {
-                icon: <MapPin size={18} className="text-brand-orange" />,
+                icon: <MapPin size={18} className="text-brand-accent" />,
                 label: "Location",
                 value: "Semarang, Indonesia — Remote Worldwide",
                 href: null,

@@ -10,8 +10,8 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden grid-pattern">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-brand-orange/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-brand-blue-pale rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-brand-primary-pale rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         {/* Available badge */}
@@ -33,7 +33,7 @@ export default function HeroSection() {
         <p className="text-lg sm:text-xl text-brand-muted max-w-2xl leading-relaxed mb-10 animate-fade-up stagger-2">
           I build digital products that work — from business systems and web
           apps to AI automation and brand design.{" "}
-          <span className="text-brand-blue font-medium">
+          <span className="text-brand-primary font-medium">
             Based in Semarang, working globally.
           </span>
         </p>
@@ -42,7 +42,7 @@ export default function HeroSection() {
         <div className="flex flex-wrap gap-4 mb-16 animate-fade-up stagger-3">
           <button
             onClick={() => scroll("projects")}
-            className="bg-brand-blue hover:bg-brand-blue-mid text-white font-medium px-7 py-3.5 rounded-full transition-all hover:-translate-y-1 hover:shadow-lg shadow-brand-blue/20"
+            className="bg-brand-primary hover:bg-brand-primary text-white font-medium px-7 py-3.5 rounded-full transition-all hover:-translate-y-1 hover:shadow-lg shadow-brand-primary/20"
           >
             View Projects
           </button>
@@ -50,7 +50,7 @@ export default function HeroSection() {
             href={`https://wa.me/${siteConfig.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-white border border-brand-border hover:border-brand-orange text-brand-dark hover:text-brand-orange font-medium px-7 py-3.5 rounded-full transition-all hover:-translate-y-1 hover:shadow-md"
+            className="flex items-center gap-2 bg-white border border-brand-border hover:border-brand-accent text-brand-dark hover:text-brand-accent font-medium px-7 py-3.5 rounded-full transition-all hover:-translate-y-1 hover:shadow-md"
           >
             <MessageCircle size={18} />
             Get in Touch
@@ -59,7 +59,7 @@ export default function HeroSection() {
             href={siteConfig.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-brand-muted hover:text-brand-blue font-medium px-7 py-3.5 rounded-full border border-brand-border hover:border-brand-blue transition-all bg-white hover:-translate-y-1"
+            className="flex items-center gap-2 text-brand-muted hover:text-brand-primary font-medium px-7 py-3.5 rounded-full border border-brand-border hover:border-brand-primary transition-all bg-white hover:-translate-y-1"
           >
             <Github size={18} />
             GitHub
@@ -78,7 +78,7 @@ export default function HeroSection() {
               key={stat.label}
               className="bg-white border border-brand-border rounded-2xl p-5 text-center card-hover"
             >
-              <div className="font-display font-bold text-3xl text-brand-blue leading-none mb-1">
+              <div className="font-display font-bold text-3xl text-brand-primary leading-none mb-1">
                 {stat.num}
               </div>
               <div className="text-xs text-brand-muted font-medium">
@@ -92,7 +92,7 @@ export default function HeroSection() {
       {/* Scroll indicator */}
       <button
         onClick={() => scroll("services")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-brand-muted hover:text-brand-blue transition-colors animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-brand-muted hover:text-brand-primary transition-colors animate-bounce"
       >
         <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>
         <ArrowDown size={16} />

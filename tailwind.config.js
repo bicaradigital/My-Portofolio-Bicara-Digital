@@ -9,17 +9,16 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          blue: '#1A3C6E',
-          'blue-mid': '#2355A0',
-          'blue-light': '#3B7DD8',
-          'blue-pale': '#E8F0FB',
-          orange: '#F47C20',
-          'orange-deep': '#D4610A',
-          'orange-light': '#FEF0E3',
-          dark: '#0D1B2E',
-          muted: '#6B7A8D',
-          border: '#E2E8F0',
-          bg: '#F8FAFD',
+          primary: '#1F2937',
+          'primary-light': '#374151',
+          'primary-pale': '#F3F4F6',
+          accent: '#0D9488',
+          'accent-light': '#CCFBF1',
+          dark: '#111827',
+          muted: '#6B7280',
+          border: '#E5E7EB',
+          bg: '#FFFFFF',
+          'bg-secondary': '#F9FAFB',
         }
       },
       fontFamily: {
