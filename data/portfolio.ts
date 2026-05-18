@@ -451,7 +451,6 @@ export const testimonials = [
     service: "Website Catering",
     rating: 5,
     text: "Saya tidak menyangka website Ami Food bisa tampil seprofesional ini. Bicara Digital benar-benar paham kebutuhan bisnis catering kami — dari tampilan menu, form pemesanan, sampai visual yang langsung bikin calon pelanggan percaya. Orderan online meningkat drastis sejak website live!",
-    avatar: "DI",
   },
   {
     id: 2,
@@ -462,7 +461,6 @@ export const testimonials = [
     service: "Logo & Aplikasi Buku Keuangan",
     rating: 5,
     text: "Bicara Digital bantu aku dari nol — mulai desain logo Resep Mom yang kece sampai aplikasi buku keuangan yang simpel banget dipakai. Sekarang aku bisa pantau pemasukan dan pengeluaran usaha setiap hari tanpa ribet. Rekomen banget buat UMKM yang mau naik level!",
-    avatar: "VI",
   },
   {
     id: 3,
@@ -473,7 +471,6 @@ export const testimonials = [
     service: "Logo & Desain Kemasan",
     rating: 5,
     text: "Sebelumnya kemasan produk Cikliyan21 biasa saja. Setelah dibantu Bicara Digital, logo dan kemasannya jadi cantik dan modern — pelanggan sering komen packaging-nya bagus! Penjualan di marketplace pun makin percaya diri karena tampilan sudah naik kelas.",
-    avatar: "BC",
   },
   {
     id: 4,
@@ -484,7 +481,6 @@ export const testimonials = [
     service: "Aplikasi HPP & Dashboard",
     rating: 5,
     text: "Dulu hitung HPP jasa retort manual dan sering ada selisih. Setelah pakai aplikasi dari Bicara Digital, semuanya otomatis dan akurat. Dashboard R2B juga sangat membantu saya monitor performa usaha secara real-time. Ini investasi digital paling worth it untuk R2B!",
-    avatar: "IP",
   },
   {
     id: 5,
@@ -495,7 +491,7 @@ export const testimonials = [
     service: "Landing Page Bengkel Motor",
     rating: 5,
     text: "Landing page Bengkel Mas Djalal yang dibuat Bicara Digital beneran keren dan mudah ditemukan di Google. Banyak pelanggan baru yang ngaku tau bengkel kami dari website. Tampilan profesional, loading cepat, dan informasinya lengkap. Sangat puas dengan hasilnya!",
-    avatar: "TR",
+
   },
   {
     id: 6,
@@ -505,7 +501,6 @@ export const testimonials = [
     location: "Solo, 2024",
     service: "Aplikasi Invoice Otomatis",
     rating: 5,
-    text: "Dulu buat invoice manual satu per satu, buang waktu banget. Sekarang pakai aplikasi dari Bicara Digital, invoice langsung jadi otomatis — tinggal input data, langsung keluar rapi dan siap kirim ke customer. Adina Kaos jadi makin terlihat profesional di mata buyer. Terima kasih Bicara Digital!",
-    avatar: "DN",
+    text: "Dulu buat invoice manual satu per satu, buang waktu banget. Sekarang pakai aplikasi dari Bicara Digital, invoice langsung jadi otomatis — tinggal input data, langsung keluar rapi dan siap kirim ke customer. Adina Kaos jadi makin terlihat profesional di mata buyer. Terima kasih Bicara Digital!",,
   },
 ]
