@@ -9,14 +9,16 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          primary: '#1F2937',
-          'primary-light': '#374151',
+          primary: '#111827',
+          'primary-light': '#1F2937',
           'primary-pale': '#F3F4F6',
           accent: '#0D9488',
           'accent-light': '#CCFBF1',
-          dark: '#111827',
-          muted: '#6B7280',
-          border: '#E5E7EB',
+          gold: '#D97706',
+          'gold-light': '#FEF3C7',
+          dark: '#000000',
+          muted: '#4B5563',
+          border: '#D1D5DB',
           bg: '#FFFFFF',
           'bg-secondary': '#F9FAFB',
         }

@@ -31,7 +31,7 @@ export default function TestimonialsSection() {
                   <Star
                     key={i}
                     size={16}
-                    className="fill-brand-accent text-brand-accent"
+                    className="fill-yellow-400 text-yellow-400"
                   />
                 ))}
               </div>
