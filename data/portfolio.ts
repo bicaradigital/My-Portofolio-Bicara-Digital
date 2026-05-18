@@ -97,7 +97,7 @@ export const devProjects = [
     category: "Business System",
     year: "2024",
     title: "KeuanganPintar Pro",
-    client: "Bicara Digital (SaaS)",
+    client: "Digital Product (SaaS)",
     desc: "Personal finance dashboard — real-time income, expense, savings tracking with Supabase auth, transaction CRUD, and monthly report generation.",
     descId: "Dashboard keuangan personal real-time dengan autentikasi Supabase dan laporan bulanan.",
     stack: ["Next.js 14", "Supabase", "ShadCN", "Tailwind", "Lucide", "Vercel"],
