@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#" className="font-display font-bold text-lg text-brand-text tracking-tight">
             Bicara<span className="text-brand-orange">.</span>Digital
-          </span>
+        </span>
 
           {/* Desktop */}
           <div className="hidden md:flex items-center gap-8">
