@@ -39,7 +39,7 @@ export default function HeroSection() {
 
           {/* Stats */}
           <div className="flex gap-8 lg:gap-12 shrink-0">
-            {[["5+", "Years Design"], ["9+", "Projects Built"], ["6", "Happy Clients"]].map(([n, l]) => (
+            {[["5+", "Years Design"], ["15+", "Projects Built"], ["6+", "Happy Clients"]].map(([n, l]) => (
               <div key={l} className="text-center lg:text-right">
                 <div className="font-display font-bold text-2xl lg:text-3xl text-brand-text">{n}</div>
                 <div className="text-xs text-brand-text-dim mt-1 whitespace-nowrap">{l}</div>
