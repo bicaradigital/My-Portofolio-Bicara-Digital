@@ -37,7 +37,7 @@ export const devProjects = [
     desc: "Professional landing page for a motorcycle repair shop — SEO-optimized, fast loading, complete service info. New customers found the shop via Google after launch.",
     stack: ["Next.js", "Tailwind CSS", "TypeScript", "SEO", "Vercel"],
     type: "web", highlight: "SEO-ready · New customers via Google",
-    githubUrl: "https://github.com/bicaradigital/LP-Bengkel-Mas-Djalal", liveUrl: null,
+    githubUrl: "https://github.com/bicaradigital/LP-Bengkel-Mas-Djalal", liveUrl: "https://bengkelmotorsemarang.vercel.app/",
   },
   {
     id: "keuangan-pintar", category: "Business System", year: "2024",
