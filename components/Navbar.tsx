@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { siteConfig } from "@/data/portfolio";
 
@@ -32,15 +31,8 @@ export default function Navbar() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-brand-surface/95 backdrop-blur-md border-b border-brand-border-light" : "bg-transparent"}`}>
         <div className="max-w-6xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex-shrink-0">
-            <Image
-              src="/images/bicara-digital-logo-transparent.png"
-              alt="Bicara Digital"
-              width={140}
-              height={45}
-              className="h-10 w-auto"
-              priority
-            />
+          <a href="#" className="font-display font-bold text-lg text-brand-text tracking-tight">
+            Bicara<span className="text-brand-orange">.</span>Digital
           </a>
 
           {/* Desktop */}
@@ -76,13 +68,7 @@ export default function Navbar() {
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setOpen(false)} />
         <div className={`absolute top-0 right-0 bottom-0 w-72 bg-brand-surface border-l border-brand-border-light transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}>
           <div className="flex items-center justify-between px-6 h-16 border-b border-brand-border-light">
-            <Image
-              src="/images/bicara-digital-logo-transparent.png"
-              alt="Bicara Digital"
-              width={120}
-              height={40}
-              className="h-9 w-auto"
-            />
+            <span className="font-display font-bold text-brand-text">Bicara<span className="text-brand-orange">.</span>Digital</span>
             <button onClick={() => setOpen(false)}><X size={18} className="text-brand-text-dim" /></button>
           </div>
           <div className="p-6 flex flex-col gap-1">
