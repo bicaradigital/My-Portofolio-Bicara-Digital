@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#" className="font-display font-bold text-lg text-brand-text tracking-tight">
             Bicara<span className="text-brand-orange">.</span>Digital
-        </span>
+          </a>
 
           {/* Desktop */}
           <div className="hidden md:flex items-center gap-8">
@@ -68,7 +68,7 @@ export default function Navbar() {
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setOpen(false)} />
         <div className={`absolute top-0 right-0 bottom-0 w-72 bg-brand-surface border-l border-brand-border-light transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}>
           <div className="flex items-center justify-between px-6 h-16 border-b border-brand-border-light">
-            <span className="font-display font-bold text-brand-text">Bicara<span className="text-brand-orange">.</span></span>
+            <span className="font-display font-bold text-brand-text">Bicara<span className="text-brand-orange">.</span>Digital</span>
             <button onClick={() => setOpen(false)}><X size={18} className="text-brand-text-dim" /></button>
           </div>
           <div className="p-6 flex flex-col gap-1">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig } from "@/data/portfolio";
 import { MapPin } from "lucide-react";
 
@@ -21,9 +22,13 @@ export default function AboutSection() {
           {/* Left */}
           <div>
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-16 h-16 bg-brand-surface border border-brand-border-light rounded-sm flex items-center justify-center shrink-0">
-                <span className="font-display font-bold text-xl text-brand-orange">BT</span>
-              </div>
+              <Image
+                src="/images/bagoes-profile.jpg"
+                alt={siteConfig.owner}
+                width={64}
+                height={64}
+                className="w-16 h-16 rounded-sm object-cover flex-shrink-0"
+              />
               <div>
                 <h3 className="font-display font-bold text-xl text-brand-text">{siteConfig.owner}</h3>
                 <p className="text-sm text-brand-text-dim flex items-center gap-1.5 mt-1">

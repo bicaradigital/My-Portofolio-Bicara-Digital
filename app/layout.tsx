@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     title: "Bicara Digital — Web, AI & Brand",
     description: "Digital products that work. Based in Semarang, working globally.",
     type: "website",
+    images: [
+      {
+        url: "/images/bicara-digital-logo-transparent.png",
+        width: 1200,
+        height: 630,
+        alt: "Bicara Digital",
+      },
+    ],
   },
 };
 
