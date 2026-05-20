@@ -34,7 +34,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#" className="flex-shrink-0">
             <Image
-              src="/images/bicara-digital-logo.png"
+              src="/images/bicara-digital-logo-transparent.png"
               alt="Bicara Digital"
               width={140}
               height={45}
@@ -77,7 +77,7 @@ export default function Navbar() {
         <div className={`absolute top-0 right-0 bottom-0 w-72 bg-brand-surface border-l border-brand-border-light transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}>
           <div className="flex items-center justify-between px-6 h-16 border-b border-brand-border-light">
             <Image
-              src="/images/bicara-digital-logo.png"
+              src="/images/bicara-digital-logo-transparent.png"
               alt="Bicara Digital"
               width={120}
               height={40}
