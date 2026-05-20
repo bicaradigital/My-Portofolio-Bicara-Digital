@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="font-display font-bold text-lg text-brand-text tracking-tight">
-            Bicara<span className="text-brand-orange">.</span>
+            Bicara<span className="text-brand-orange">.</span>Digital
           </a>
 
           {/* Desktop */}
