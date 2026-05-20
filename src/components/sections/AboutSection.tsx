@@ -1,122 +1,69 @@
 import { siteConfig } from "@/data/portfolio";
-import { MapPin, Briefcase, Palette } from "lucide-react";
+import { MapPin } from "lucide-react";
 
-const experience = [
-  {
-    period: "2022 – Present",
-    role: "Freelance Developer & AI Consultant",
-    company: "Bicara Digital — Remote, Global",
-    icon: <Briefcase size={16} className="text-brand-orange" />,
-  },
-  {
-    period: "Previous",
-    role: "Support System Operational",
-    company: "Corporate — Semarang",
-    icon: <Briefcase size={16} className="text-brand-blue-light" />,
-  },
-  {
-    period: "2019 – Present",
-    role: "Graphic Designer",
-    company: "Freelance — 5+ Years",
-    icon: <Palette size={16} className="text-brand-orange" />,
-  },
+const exp = [
+  { period: "2022 – Present", role: "Freelance Developer & AI Consultant", company: "Bicara Digital — Remote, Global" },
+  { period: "Previous", role: "Support System Operational", company: "Corporate — Semarang" },
+  { period: "2019 – Present", role: "Graphic Designer", company: "Freelance — 5+ Years" },
 ];
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-brand-bg">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-12">
-          <p className="text-xs font-semibold tracking-widest uppercase text-brand-orange mb-3">
-            Who I Am
-          </p>
-          <h2 className="font-display font-bold text-3xl sm:text-4xl text-brand-dark tracking-tight accent-bar">
-            About
-          </h2>
+    <section id="about" className="py-24 bg-brand-bg border-t border-brand-border">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="flex items-center gap-3 mb-12">
+          <span className="num-accent">007</span>
+          <div className="h-px w-8 bg-brand-subtle" />
+          <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-text tracking-tight">About</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Left: Avatar + Experience */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* Left */}
           <div>
-            {/* Avatar */}
-            <div className="flex items-center gap-5 mb-8">
-              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-brand-blue to-brand-blue-light flex items-center justify-center flex-shrink-0 shadow-lg">
-                <span className="font-display font-bold text-2xl text-white">BT</span>
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-16 h-16 bg-brand-surface border border-brand-border rounded-sm flex items-center justify-center shrink-0">
+                <span className="font-display font-bold text-xl text-brand-orange">BT</span>
               </div>
               <div>
-                <h3 className="font-display font-bold text-2xl text-brand-dark">
-                  {siteConfig.owner}
-                </h3>
-                <p className="text-brand-muted text-sm flex items-center gap-1.5 mt-1">
-                  <MapPin size={14} className="text-brand-orange" />
-                  {siteConfig.location} — Remote Worldwide
+                <h3 className="font-display font-bold text-xl text-brand-text">{siteConfig.owner}</h3>
+                <p className="text-sm text-brand-muted flex items-center gap-1.5 mt-1">
+                  <MapPin size={12} className="text-brand-orange" />
+                  {siteConfig.location}
                 </p>
               </div>
             </div>
 
-            {/* Experience timeline */}
-            <div className="space-y-4">
-              {experience.map((exp, i) => (
-                <div
-                  key={i}
-                  className="flex gap-4 bg-white border border-brand-border rounded-2xl p-4 card-hover"
-                >
-                  <div className="w-9 h-9 bg-brand-bg rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
-                    {exp.icon}
-                  </div>
+            <div className="space-y-3">
+              <p className="section-label mb-3">Experience</p>
+              {exp.map((e, i) => (
+                <div key={i} className="flex gap-4 py-4 border-b border-brand-border last:border-0">
+                  <span className="text-xs text-brand-muted min-w-[110px] pt-0.5 font-mono">{e.period}</span>
                   <div>
-                    <p className="text-xs text-brand-muted mb-0.5">{exp.period}</p>
-                    <p className="text-sm font-semibold text-brand-dark">{exp.role}</p>
-                    <p className="text-xs text-brand-muted">{exp.company}</p>
+                    <p className="text-sm text-brand-text font-medium">{e.role}</p>
+                    <p className="text-xs text-brand-muted mt-0.5">{e.company}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right: Bio */}
-          <div className="space-y-5 text-brand-muted leading-relaxed">
-            <p>
-              I'm a developer and creative professional from Semarang, Indonesia
-              with a background spanning corporate operational support, graphic
-              design, and modern web development.
-            </p>
-            <p>
-              Through{" "}
-              <span className="text-brand-blue font-semibold">Bicara Digital</span>,
-              I help businesses — from local UMKM to growing startups — build
-              practical digital products: web applications, business systems,
-              AI-powered tools, and brand identities that actually solve problems.
-            </p>
-            <p>
-              My approach combines technical depth with a designer's eye. I don't
-              just build what's asked — I think about the user, the business
-              context, and the outcome. That means cleaner systems, better
-              interfaces, and products people actually use.
-            </p>
-            <p>
-              Currently open to{" "}
-              <span className="text-brand-orange font-semibold">
-                remote project collaborations
-              </span>{" "}
-              and long-term client partnerships.
-            </p>
+          {/* Right */}
+          <div className="space-y-5 text-brand-text-dim text-sm leading-relaxed">
+            <p>Developer and creative professional from Semarang, Indonesia with a background spanning corporate operational support, graphic design, and modern web development.</p>
+            <p>Through <span className="text-brand-text font-medium">Bicara Digital</span>, I help businesses build practical digital products — web applications, business systems, AI-powered tools, and brand identities that solve real problems.</p>
+            <p>My approach combines technical depth with a designer's eye. I don't just build what's asked — I think about the user, the business context, and the outcome.</p>
+            <p>Currently open to <span className="text-brand-orange">remote project collaborations</span> and long-term client partnerships.</p>
 
-            {/* Quick facts */}
-            <div className="grid grid-cols-2 gap-3 mt-6">
+            <div className="grid grid-cols-2 gap-3 mt-6 pt-6 border-t border-brand-border">
               {[
-                { label: "Location", value: "Semarang, Indonesia" },
-                { label: "Languages", value: "Bahasa, English" },
-                { label: "Availability", value: "Open to Remote" },
-                { label: "Response Time", value: "< 24 hours" },
-              ].map((fact) => (
-                <div
-                  key={fact.label}
-                  className="bg-white border border-brand-border rounded-xl p-4"
-                >
-                  <p className="text-xs text-brand-muted mb-1">{fact.label}</p>
-                  <p className="text-sm font-semibold text-brand-dark">{fact.value}</p>
+                ["Location", "Semarang, Indonesia"],
+                ["Languages", "Bahasa, English"],
+                ["Availability", "Open to Remote"],
+                ["Response", "< 24 hours"],
+              ].map(([k, v]) => (
+                <div key={k} className="bg-brand-surface border border-brand-border rounded-sm p-4">
+                  <p className="text-xs text-brand-muted mb-1">{k}</p>
+                  <p className="text-sm text-brand-text font-medium">{v}</p>
                 </div>
               ))}
             </div>

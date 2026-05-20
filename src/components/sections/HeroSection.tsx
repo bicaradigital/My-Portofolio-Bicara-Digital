@@ -1,102 +1,80 @@
 "use client";
 import { siteConfig } from "@/data/portfolio";
-import { ArrowDown, Github, MessageCircle } from "lucide-react";
+import { ArrowDownRight, Github, MessageCircle } from "lucide-react";
 
 export default function HeroSection() {
-  const scroll = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+  const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden grid-pattern">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-brand-orange/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-brand-blue-pale rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none" />
+    <section className="hero-gradient min-h-screen flex flex-col justify-end pb-16 pt-32 relative overflow-hidden">
+      {/* Top right label */}
+      <div className="absolute top-20 right-6 lg:right-8 flex items-center gap-2">
+        <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
+        <span className="text-xs text-brand-muted tracking-widest uppercase">Available</span>
+      </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-        {/* Available badge */}
-        <div className="inline-flex items-center gap-2 bg-white border border-brand-border rounded-full px-4 py-2 mb-8 shadow-sm animate-fade-up">
-          <span className="w-2 h-2 bg-green-500 rounded-full pulse-dot" />
-          <span className="text-sm font-medium text-brand-muted">
-            Available for remote work
-          </span>
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 w-full">
+        {/* Index tag */}
+        <div className="flex items-center gap-3 mb-8">
+          <span className="num-accent">001</span>
+          <div className="h-px w-8 bg-brand-subtle" />
+          <span className="section-label">Portfolio</span>
         </div>
 
-        {/* Headline */}
-        <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-7xl leading-tight tracking-tight text-brand-dark mb-6 animate-fade-up stagger-1">
-          Tech &amp; Creative —{" "}
-          <br className="hidden sm:block" />
-          <span className="gradient-text">Web, AI, and Brand</span>
+        {/* Main headline */}
+        <h1 className="font-display font-bold text-[clamp(2.8rem,8vw,7rem)] leading-[0.95] tracking-tight text-brand-text mb-8">
+          Bagoes<br />
+          Tri Anggoro<span className="text-brand-orange">.</span>
         </h1>
 
-        {/* Subheadline */}
-        <p className="text-lg sm:text-xl text-brand-muted max-w-2xl leading-relaxed mb-10 animate-fade-up stagger-2">
-          I build digital products that work — from business systems and web
-          apps to AI automation and brand design.{" "}
-          <span className="text-brand-blue font-medium">
-            Based in Semarang, working globally.
-          </span>
-        </p>
+        {/* Tagline row */}
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
+          <div className="max-w-xl">
+            <p className="text-brand-text-dim text-base lg:text-lg leading-relaxed">
+              Web developer, AI integrator, and brand designer based in{" "}
+              <span className="text-brand-text">Semarang, Indonesia</span>{" "}
+              — building digital products that work for real businesses.
+            </p>
+          </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-wrap gap-4 mb-16 animate-fade-up stagger-3">
-          <button
-            onClick={() => scroll("projects")}
-            className="bg-brand-blue hover:bg-brand-blue-mid text-white font-medium px-7 py-3.5 rounded-full transition-all hover:-translate-y-1 hover:shadow-lg shadow-brand-blue/20"
-          >
-            View Projects
+          {/* Stats */}
+          <div className="flex gap-8 lg:gap-12 shrink-0">
+            {[["5+", "Years Design"], ["9+", "Projects Built"], ["6", "Happy Clients"]].map(([n, l]) => (
+              <div key={l} className="text-center lg:text-right">
+                <div className="font-display font-bold text-2xl lg:text-3xl text-brand-text">{n}</div>
+                <div className="text-xs text-brand-muted mt-1 whitespace-nowrap">{l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CTA row */}
+        <div className="flex flex-wrap items-center gap-4">
+          <button onClick={() => go("projects")}
+            className="group flex items-center gap-2 bg-brand-text text-brand-bg font-medium px-7 py-3.5 text-sm tracking-wide hover:bg-white transition-colors rounded-sm">
+            View Work
+            <ArrowDownRight size={16} className="group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
           </button>
-          <a
-            href={`https://wa.me/${siteConfig.whatsapp}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-white border border-brand-border hover:border-brand-orange text-brand-dark hover:text-brand-orange font-medium px-7 py-3.5 rounded-full transition-all hover:-translate-y-1 hover:shadow-md"
-          >
-            <MessageCircle size={18} />
+          <a href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-2 border border-brand-border text-brand-text-dim hover:text-brand-text hover:border-brand-border-light px-7 py-3.5 text-sm tracking-wide transition-all rounded-sm">
+            <MessageCircle size={15} />
             Get in Touch
           </a>
-          <a
-            href={siteConfig.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-brand-muted hover:text-brand-blue font-medium px-7 py-3.5 rounded-full border border-brand-border hover:border-brand-blue transition-all bg-white hover:-translate-y-1"
-          >
-            <Github size={18} />
+          <a href={siteConfig.github} target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-2 text-brand-muted hover:text-brand-text-dim text-sm transition-colors">
+            <Github size={15} />
             GitHub
           </a>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 animate-fade-up stagger-4">
-          {[
-            { num: "5+", label: "Years Design" },
-            { num: "2+", label: "Years Dev & AI" },
-            { num: "8+", label: "Projects Built" },
-            { num: "3+", label: "Industries" },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-white border border-brand-border rounded-2xl p-5 text-center card-hover"
-            >
-              <div className="font-display font-bold text-3xl text-brand-blue leading-none mb-1">
-                {stat.num}
-              </div>
-              <div className="text-xs text-brand-muted font-medium">
-                {stat.label}
-              </div>
-            </div>
-          ))}
+        {/* Bottom scroll hint */}
+        <div className="mt-16 flex items-center gap-4">
+          <div className="h-px flex-1 bg-brand-border max-w-xs" />
+          <button onClick={() => go("projects")} className="text-xs text-brand-muted hover:text-brand-text-dim transition-colors tracking-widest uppercase">
+            Scroll to explore
+          </button>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <button
-        onClick={() => scroll("services")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-brand-muted hover:text-brand-blue transition-colors animate-bounce"
-      >
-        <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>
-        <ArrowDown size={16} />
-      </button>
     </section>
   );
 }
