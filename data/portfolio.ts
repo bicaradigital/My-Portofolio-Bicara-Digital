@@ -28,7 +28,7 @@ export const devProjects = [
     desc: "Modern landing page for an authentic Semarang culinary business established in 1997. Menu showcase, catering info, testimonials, and full brand identity.",
     stack: ["Next.js 16", "React 19", "Tailwind CSS 4", "TypeScript", "shadcn/ui"],
     type: "web", highlight: "Responsive · SEO-ready · Dark/Light mode",
-    githubUrl: "https://github.com/bicaradigital/website-development-for-ami-food", liveUrl: null,
+    githubUrl: "https://github.com/bicaradigital/website-development-for-ami-food", liveUrl: "https://blenyikamisemarang.com/",
   },
   {
     id: "bengkel", category: "Web Dev", year: "2024",
