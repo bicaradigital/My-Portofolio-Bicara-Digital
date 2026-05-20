@@ -28,7 +28,7 @@ export const devProjects = [
     desc: "Modern landing page for an authentic Semarang culinary business established in 1997. Menu showcase, catering info, testimonials, and full brand identity.",
     stack: ["Next.js 16", "React 19", "Tailwind CSS 4", "TypeScript", "shadcn/ui"],
     type: "web", highlight: "Responsive · SEO-ready · Dark/Light mode",
-    githubUrl: "https://github.com/bicaradigital/website-development-for-ami-food", liveUrl: null,
+    githubUrl: "https://github.com/bicaradigital/website-development-for-ami-food", liveUrl: "https://blenyikamisemarang.com/",
   },
   {
     id: "bengkel", category: "Web Dev", year: "2024",
@@ -37,7 +37,7 @@ export const devProjects = [
     desc: "Professional landing page for a motorcycle repair shop — SEO-optimized, fast loading, complete service info. New customers found the shop via Google after launch.",
     stack: ["Next.js", "Tailwind CSS", "TypeScript", "SEO", "Vercel"],
     type: "web", highlight: "SEO-ready · New customers via Google",
-    githubUrl: "https://github.com/bicaradigital/LP-Bengkel-Mas-Djalal", liveUrl: null,
+    githubUrl: "https://github.com/bicaradigital/LP-Bengkel-Mas-Djalal", liveUrl: "https://bengkelmotorsemarang.vercel.app/",
   },
   {
     id: "keuangan-pintar", category: "Business System", year: "2024",
@@ -123,7 +123,7 @@ export const designProjects = [
   { id: "kaos-4", category: "apparel", categoryLabel: "Apparel Design", title: "T-Shirt Collection 04", client: "Custom Order", year: "2024", desc: "Event merchandise — community branded t-shirt with clean graphic.", src: "/images/apparel/kaos-4.jpg", canvaLink: null },
   { id: "kaos-perawat", category: "apparel", categoryLabel: "Apparel Design", title: "Kaos Perawat — Healthcare Event", client: "Healthcare Event", year: "2024", desc: "Custom t-shirt for healthcare professionals — professional uniform design.", src: "/images/apparel/kaos-perawat.jpg", canvaLink: null },
   { id: "feed-1", category: "content", categoryLabel: "Content Design", title: "Instagram Feed — Cikliyan Series", client: "Cikliyan21 Kuliner", year: "2025", desc: "Cohesive Instagram feed — consistent visual identity across social media.", src: "/images/content/feed-1.jpg", canvaLink: null },
-  { id: "content-good-food", category: "content", categoryLabel: "Content Design", title: "Social Media — Good Food Good Taste", client: "F&B Client", year: "2024", desc: "Promotional social media content — clean layout with strong CTA.", src: "/images/content/content-good-food.jpg", canvaLink: null },
+  { id: "packaging", category: "packaging", categoryLabel: "Packaging", title: "Packaging - Bakoel Sambe", client: "F&B Client", year: "2024", desc: "Packaging for product sambal — clean layout with strong CTA.", src: "/images/content/content-good-food.jpg", canvaLink: null },
   { id: "content-steak", category: "content", categoryLabel: "Content Design", title: "Promo Content — Steak Keju", client: "F&B Client", year: "2023", desc: "Food promo design — mouth-watering visual with bold messaging.", src: "/images/content/content-steak-keju.jpg", canvaLink: null },
 ]
 
