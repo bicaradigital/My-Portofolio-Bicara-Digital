@@ -5,6 +5,7 @@ import { siteConfig } from "@/data/portfolio";
 
 const navLinks = [
   { label: "Work", href: "#projects" },
+  { label: "AI & Automation", href: "#ai-automation" },
   { label: "Design", href: "#design" },
   { label: "Services", href: "#services" },
   { label: "Reviews", href: "#testimonials" },
