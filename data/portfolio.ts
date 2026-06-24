@@ -22,6 +22,15 @@ export const services = [
 
 export const devProjects = [
   {
+    id: "kelolakosmu-admin", category: "Business System", year: "2025",
+    title: "Admin Panel — Kelola Kosmu License System",
+    client: "Kelola Kosmu (SaaS Product)",
+    desc: "Secure admin dashboard for managing license keys of Kelola Kosmu — a boarding house management SaaS sold as a one-time purchase. Handles license generation, validation, activation tracking, and customer access control with Supabase backend.",
+    stack: ["Next.js", "Supabase", "TypeScript", "Admin Dashboard", "Auth"],
+    type: "business", highlight: "License key system — KK-YYYY-XXXX-XXXX format",
+    githubUrl: "https://github.com/bicaradigital/admin-license-key-kelolakosmu", liveUrl: "https://admin-license-key-kelolakosmu.vercel.app/",
+  },
+  {
     id: "ami-food", category: "Web Dev", year: "2024",
     title: "Ami Food — Website Profile",
     client: "Ami Food Catering, Semarang",
