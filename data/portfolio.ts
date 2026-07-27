@@ -28,7 +28,7 @@ export const devProjects = [
     desc: "Modern landing page for an authentic Semarang culinary business established in 1997. Menu showcase, catering info, testimonials, and full brand identity.",
     stack: ["Next.js 16", "React 19", "Tailwind CSS 4", "TypeScript", "shadcn/ui"],
     type: "web", highlight: "Responsive · SEO-ready · Dark/Light mode",
-    githubUrl: "https://github.com/bicaradigital/website-development-for-ami-food", liveUrl: null,
+    githubUrl: "https://github.com/bicaradigital/website-development-for-ami-food", liveUrl: 'https://www.blenyikamisemarang.com',
   },
   {
     id: "bengkel", category: "Web Dev", year: "2024",
@@ -65,6 +65,17 @@ export const devProjects = [
     stack: ["Next.js", "PostgreSQL", "TypeScript", "shadcn/ui"],
     type: "business", highlight: "Auto notifications · Full financial reports",
     githubUrl: "https://github.com/bicaradigital/Management-Pengelola-Kost", liveUrl: null,
+  },
+  {
+    id: "rukoku", category: "Business System", year: "2025",
+    title: "RukoKu — Aplikasi Pengelola Ruko",
+    client: "Private Client — Property Owner",
+    desc: "Custom web application for managing commercial space (ruko) rentals — tenant data management, rental billing, automatic due date notifications, occupancy tracking, and financial reports with PDF/Excel export.",
+    stack: ["Next.js", "Supabase", "TypeScript", "shadcn/ui", "Tailwind CSS"],
+    type: "business",
+    highlight: "Custom commercial property management system",
+    githubUrl: "https://github.com/bicaradigital/RukoKu-Aplikasi-Pengelola-Ruko",
+    liveUrl: "https://www.rukoku.store",
   },
   {
     id: "invoice-adina", category: "Business System", year: "2024",
