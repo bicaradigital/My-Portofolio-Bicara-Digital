@@ -23,9 +23,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
       <body className="bg-brand-bg text-brand-text font-body antialiased">
       {children}
-      <script 
-        src="https://app.gethelin.com/embed.js" 
+      <Script 
+        src="https://app.gethelin.com/embed.js"
         id="86edb169c1392d0ec5dc58b5bd0da021"
-        async
+        strategy="afterInteractive"
       />
     </body>
