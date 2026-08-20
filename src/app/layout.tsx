@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Script
           src="https://app.gethelin.com/embed.js"
-          id="86edb169c1392d0ec5dc58b5bd0da021"
+          id="b5c24c5b-ec06-4c47-b7c3-0b770ae1e988"
           strategy="afterInteractive"
         />
       </body>
