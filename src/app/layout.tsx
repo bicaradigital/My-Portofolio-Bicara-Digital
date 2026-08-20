@@ -22,10 +22,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
       <body className="bg-brand-bg text-brand-text font-body antialiased">
-      {children}
-      <Script 
-        src="https://app.gethelin.com/embed.js"
-        id="86edb169c1392d0ec5dc58b5bd0da021"
-        strategy="afterInteractive"
-      />
-    </body>
+        {children}
+        <Script
+          src="https://app.gethelin.com/embed.js"
+          id="86edb169c1392d0ec5dc58b5bd0da021"
+          strategy="afterInteractive"
+        />
+      </body>
+    </html>
+  );
+}
