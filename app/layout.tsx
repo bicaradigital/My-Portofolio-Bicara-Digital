@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -14,21 +15,20 @@ export const metadata: Metadata = {
     title: "Bicara Digital — Web, AI & Brand",
     description: "Digital products that work. Based in Semarang, working globally.",
     type: "website",
-    images: [
-      {
-        url: "/images/bicara-digital-logo-transparent.png",
-        width: 1200,
-        height: 630,
-        alt: "Bicara Digital",
-      },
-    ],
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
-      <body className="bg-brand-surface text-brand-text font-body antialiased">{children}</body>
+      <body className="bg-brand-bg text-brand-text font-body antialiased">
+        {children}
+        <Script
+          src="https://app.gethelin.com/embed.js"
+          id="b5c24c5b-ec06-4c47-b7c3-0b770ae1e988"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
