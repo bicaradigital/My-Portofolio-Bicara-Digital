@@ -153,6 +153,19 @@ export const devProjects = [
     type: "ai", highlight: "Claude API integration for AI copy",
     githubUrl: "https://github.com/bicaradigital/portfoliogenerator", liveUrl: null,
   },
+  {
+  id: "sithomas-sampangan",
+  category: "Business System",
+  year: "2025",
+  title: "SITHOMAS — Sistem Informasi Umat St. Thomas",
+  client: "Gereja St. Thomas Sampangan, Semarang",
+  desc: "Web-based parish data management system for St. Thomas Catholic Church, Sampangan Semarang — manages family and congregation member data including KK number, baptism name, marital status, education, and occupation. Features admin & umat roles, import/export Excel/CSV, search & filter, and real-time local storage sync.",
+  stack: ["Next.js", "TypeScript", "v0.dev", "Tailwind CSS", "localStorage"],
+  type: "business",
+  highlight: "Parish management system · Dual role (Admin & Umat)",
+  githubUrl: "https://github.com/bicaradigital-id/sithomas-sampangan",
+  liveUrl: "https://sithomas.vercel.app/",
+  },
 ]
 
 export const designProjects = [
